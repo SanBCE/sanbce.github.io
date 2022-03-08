@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-<p style="color: #0168a5; font-size:30px;">Your request has been submitted to the Bell Competition tool for processing at <span id='curr'></span>. Please close this pop-up window <b>after <span id='future'></span></b>. Your results will be emailed to you.</p>
+    <p style="color: #0168a5; font-size:30px;">Submitted :<span id='curr'></span></p>
+    <p style="color: #0168a5; font-size:30px;">Your request has been submitted to the Bell Competition tool for processing. Please close this pop-up window <b>after 1 minute</b>. Your results will be emailed to you.</p>
 </body>
 </html>
 
@@ -10,6 +11,6 @@
     var curr = new Date();
     document.getElementById('curr').innerHTML=curr;
 
-    var future = new Date(curr.getTime() + 1*60000);
-    document.getElementById('future').innerHTML=future;
+    // var future = new Date(curr.getTime() + 1*60000);
+    // document.getElementById('future').innerHTML=future;
 </script>
